@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lotto.FXMLDocumentController">
+    <children>
+      <Pane fx:id="basePane" layoutX="7.0" layoutY="1.0" prefHeight="300.0" prefWidth="400.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e9f2d3" height="301.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+              <Button fx:id="button" contentDisplay="CENTER" layoutX="165.0" layoutY="225.0" onAction="#handleButtonAction" text="Sorsolás!">
+               <font>
+                  <Font name="Bodoni MT" size="14.0" />
+               </font>
+            </Button>
+              <Label fx:id="label0" layoutX="114.0" layoutY="59.0" minHeight="16" minWidth="69" text="Írj be öt számot 1 és 99 között:" textFill="#3fc919">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <HBox layoutX="33.0" layoutY="103.0" spacing="40.0">
+               <children>
+                  <TextField id="input1" fx:id="input1" layoutX="25.0" layoutY="117.0" prefHeight="0.0" prefWidth="35.0" />
+                  <TextField id="input2" fx:id="input2" layoutX="87.0" layoutY="117.0" prefHeight="17.0" prefWidth="35.0" />
+                  <TextField id="input3" fx:id="input3" layoutX="156.0" layoutY="117.0" prefHeight="11.0" prefWidth="35.0" />
+                  <TextField id="input4" fx:id="input4" layoutX="236.0" layoutY="117.0" prefHeight="17.0" prefWidth="35.0" />
+                  <TextField id="input5" fx:id="input5" layoutX="316.0" layoutY="117.0" prefHeight="17.0" prefWidth="35.0" />
+               </children>
+            </HBox>
+            <Label layoutX="134.0" layoutY="14.0" text="LACI LOTTÓ" textFill="#3fc919" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Franklin Gothic Demi Cond" size="31.0" />
+               </font>
+            </Label>
+            <Label id="label1" fx:id="label1" layoutX="43.0" layoutY="160.0" textFill="#3fc919">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label id="label2" fx:id="label2" layoutX="118.0" layoutY="160.0" textFill="#3fc919">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label id="label3" fx:id="label3" layoutX="194.0" layoutY="160.0" textFill="#3fc919">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label id="label4" fx:id="label4" layoutX="268.0" layoutY="160.0" textFill="#3fc919">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label id="label5" fx:id="label5" layoutX="343.0" layoutY="160.0" textFill="#3fc919">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label id="resultLabel" fx:id="resultLabel" layoutX="132.0" layoutY="190.0" textFill="#ee0000" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Text fill="#3fc919" fontSmoothingType="LCD" layoutX="152.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sorsolt számok:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="alertPane" focusTraversable="true" prefHeight="301.0" prefWidth="401.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#f8c1c1" height="100.0" layoutX="100.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Label fx:id="alertText" alignment="CENTER" layoutX="100.0" layoutY="90.0" prefHeight="107.0" prefWidth="193.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Button id="alertButton" fx:id="alertButton" layoutX="175.0" layoutY="165.0" mnemonicParsing="false" onAction="#handleButtonAlert" text="Vissza!" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Lotto.jnlp">
+  <information>
+    <title>Lotto</title>
+    <vendor>LaciNB</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Lotto.jar" size="5418" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="lotto.Lotto"  name="Lotto" />
+  <update check="always"/>
+</jnlp>
